@@ -29,10 +29,10 @@ using StringTools;
 
 class VisualsUISubState extends BaseOptionsMenu
 {
-  addVirtualPad(FULL, A_B);
   
 	public function new()
 	{
+	  addVirtualPad(FULL, A_B);
 		title = 'Visuals and UI';
 		rpcTitle = 'Visuals & UI Settings Menu'; //for Discord Rich Presence
 
