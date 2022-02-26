@@ -33,7 +33,6 @@ class ControlsSubState extends MusicBeatSubstate {
 
 	private static var defaultKey:String = 'Reset to Default Keys';
 	private var bindLength:Int = 0;
-	addVirtualPad(FULL, A_B);
 
 	var optionShit:Array<Dynamic> = [
 		['NOTES'],
@@ -70,6 +69,8 @@ class ControlsSubState extends MusicBeatSubstate {
 	var nextAccept:Int = 5;
 
 	public function new() {
+	  addVirtualPad(FULL, A_B);
+	  
 		super();
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
